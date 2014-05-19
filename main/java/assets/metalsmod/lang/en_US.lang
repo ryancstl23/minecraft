@@ -1,0 +1,33 @@
+// Creative Tab
+itemGroup.tabMetals=Metals
+
+//Item Names
+item.aluminumOre.name=Aluminum Ore
+item.aluminumIngot.name=Aluminum Ingot
+item.aluminumNugget.name=Aluminum Nugget
+item.nickelOre.name=Nickel Ore
+item.nickelIngot.name=Nickel Ingot
+item.nickelNugget.name= Nickel Nugget
+item.platinumOre.name=Platinum Ore
+item.platinumIngot.name=Platinum Ingot
+item.platinumNugget.name=Platinum Nugget
+item.titaniumOre.name=Titanium Ore
+item.titaniumIngot.name=Titanium Ingot
+item.titaniumNugget.name=Titanium Nugget
+item.zinkOre.name=Zink Ore
+item.zinkIngot.name=Zink Ingot
+item.zinkNugget.name=Zink Nugget
+
+
+//Block Names
+tile.aluminumOreBlock.name=Aluminum Ore
+tile.nickelOreBlock.name=Nickel Ore
+tile.platinumOreBlock.name=Platinum Ore
+tile.titaniumOreBlock.name=Titanium Ore
+tile.zinkOreBlock.name=Zink Ore
+
+tile.aluminumBlock.name=Aluminum Block
+tile.nickelBlock.name=Nickel Block
+tile.platinumBlock.name=Platinum Block
+tile.titaniumBlock.name=Titanium Block
+tile.zinkBlock.name=Zink Block

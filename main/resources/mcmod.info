@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tutorialmod",
+  "name": "Tutorial Mod",
+  "description": "Tutorial Mod for my Experiments",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Hypershadow66"],
+  "credits": "Hell Yeah I did it my self",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
