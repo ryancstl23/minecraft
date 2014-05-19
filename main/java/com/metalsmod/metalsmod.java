@@ -16,10 +16,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 
 //Define Mod info and mod's code
-@Mod(modid = metalsmod.modid, version = metalsmod.version)
+@Mod(modid = metalsmod.MODID, version = metalsmod.VERSION)
 public class metalsmod {
-	public static final String modid = "Metals Mod";
-	public static final String version = "0.0.7 PreAlpha - MC 1.7.2";
+	public static final String MODID = "Metals Mod";
+	public static final String VERSION = "0.0.7 PreAlpha - MC 1.7.2";
 	
 	
 	
@@ -96,10 +96,10 @@ public class metalsmod {
 		
 		
 		//Zink & Sub-Types		
-		zinkIngot = new Item().setCreativeTab(tabMetals).setUnlocalizedName("zinkIngot");
+		zinkIngot = new Item().setCreativeTab(tabMetals).setUnlocalizedName("zinkIngot").setTextureName("metalsMod:zinkIngot");
 		GameRegistry.registerItem(zinkIngot, "zinkIngot");
 		
-		zinkNugget = new Item().setCreativeTab(tabMetals).setUnlocalizedName("zinkNugget").setTextureName("metalsMod:zinkIngot");
+		zinkNugget = new Item().setCreativeTab(tabMetals).setUnlocalizedName("zinkNugget");
 		GameRegistry.registerItem(zinkNugget, "zinkNugget");
 		
 		zinkBlock = new BlockmetalSolidBlocks().setBlockName("zinkBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:zinkBlock");
@@ -142,12 +142,40 @@ public class metalsmod {
 			new ItemStack(metalsmod.zinkIngot) });
 		
 		//Reverse Recipes of Nuggets		
-		GameRegistry.addRecipe(new ItemStack(aluminumIngot), new Object[]{"CCC", "CCC", "CCC", 'C', aluminumNugget});
-		GameRegistry.addRecipe(new ItemStack(nickelIngot), new Object[]{"CCC", "CCC", "CCC", 'C', nickelNugget});		
-		GameRegistry.addRecipe(new ItemStack(platinumIngot), new Object[]{"CCC", "CCC", "CCC", 'C', platinumNugget});
-		GameRegistry.addRecipe(new ItemStack(titaniumIngot), new Object[]{"CCC", "CCC", "CCC", 'C', titaniumNugget});
-		GameRegistry.addRecipe(new ItemStack(zinkIngot), new Object[]{"CCC", "CCC", "CCC", 'C', zinkNugget});
+		GameRegistry.addRecipe(new ItemStack(aluminumIngot), new Object[]{
+			"CCC", "CCC", "CCC", 'C', aluminumNugget});
+		GameRegistry.addRecipe(new ItemStack(nickelIngot), new Object[]{
+			"CCC", "CCC", "CCC", 'C', nickelNugget});		
+		GameRegistry.addRecipe(new ItemStack(platinumIngot), new Object[]{
+			"CCC", "CCC", "CCC", 'C', platinumNugget});
+		GameRegistry.addRecipe(new ItemStack(titaniumIngot), new Object[]{
+			"CCC", "CCC", "CCC", 'C', titaniumNugget});
+		GameRegistry.addRecipe(new ItemStack(zinkIngot), new Object[]{
+			"CCC", "CCC", "CCC", 'C', zinkNugget});
 		
+		//Recipes for blocks of metals
+		GameRegistry.addRecipe(new ItemStack(aluminumBlock), new Object[]{
+			"CCC", "CCC", "CCC", 'C', aluminumIngot});
+		GameRegistry.addRecipe(new ItemStack(nickelBlock), new Object[]{
+			"CCC", "CCC", "CCC", 'C', nickelIngot});		
+		GameRegistry.addRecipe(new ItemStack(platinumBlock), new Object[]{
+			"CCC", "CCC", "CCC", 'C', platinumIngot});
+		GameRegistry.addRecipe(new ItemStack(titaniumBlock), new Object[]{
+			"CCC", "CCC", "CCC", 'C', titaniumIngot});
+		GameRegistry.addRecipe(new ItemStack(zinkBlock), new Object[]{
+			"CCC", "CCC", "CCC", 'C', zinkIngot});		
+		
+		//Reverse Recipes of Blocks
+		GameRegistry.addShapelessRecipe(new ItemStack(metalsmod.aluminumIngot, 9), new Object[] {
+			new ItemStack(metalsmod.aluminumBlock)});
+		GameRegistry.addShapelessRecipe(new ItemStack(metalsmod.nickelIngot, 9), new Object[] {
+			new ItemStack(metalsmod.nickelBlock)});		
+		GameRegistry.addShapelessRecipe(new ItemStack(metalsmod.platinumIngot, 9), new Object[] {
+			new ItemStack(metalsmod.platinumBlock)});
+		GameRegistry.addShapelessRecipe(new ItemStack(metalsmod.titaniumIngot, 9), new Object[] {
+			new ItemStack(metalsmod.titaniumBlock)});
+		GameRegistry.addShapelessRecipe(new ItemStack(metalsmod.zinkIngot, 9), new Object[] {
+			new ItemStack(metalsmod.zinkBlock)});		
 		
 		
 		//Create Smelting Recipe
@@ -160,11 +188,11 @@ public class metalsmod {
 		GameRegistry.addSmelting(metalsmod.zinkOre, new ItemStack(metalsmod.zinkIngot), 0.8F);
 		
 		//Smelting Blocks of Ores
-		GameRegistry.addSmelting(metalsmod.aluminumOreBlock, new ItemStack(metalsmod.aluminumIngot, 2), 0.8F);
-		GameRegistry.addSmelting(metalsmod.nickelOreBlock, new ItemStack(metalsmod.nickelIngot, 2), 0.8F);
-		GameRegistry.addSmelting(metalsmod.platinumOreBlock, new ItemStack(metalsmod.platinumIngot, 2), 0.8F);
-		GameRegistry.addSmelting(metalsmod.titaniumOreBlock, new ItemStack(metalsmod.titaniumIngot, 2), 0.8F);
-		GameRegistry.addSmelting(metalsmod.zinkOreBlock, new ItemStack(metalsmod.zinkIngot, 2), 0.8F);
+		GameRegistry.addSmelting(metalsmod.aluminumOreBlock, new ItemStack(metalsmod.aluminumIngot), 0.8F);
+		GameRegistry.addSmelting(metalsmod.nickelOreBlock, new ItemStack(metalsmod.nickelIngot), 0.8F);
+		GameRegistry.addSmelting(metalsmod.platinumOreBlock, new ItemStack(metalsmod.platinumIngot), 0.8F);
+		GameRegistry.addSmelting(metalsmod.titaniumOreBlock, new ItemStack(metalsmod.titaniumIngot), 0.8F);
+		GameRegistry.addSmelting(metalsmod.zinkOreBlock, new ItemStack(metalsmod.zinkIngot), 0.8F);
 	}
 
 	//Post Init Events
