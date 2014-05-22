@@ -1,6 +1,13 @@
 package com.metalsmod;
 
 
+import com.metalsmod.blocks.AluminumOre;
+import com.metalsmod.blocks.BlockmetalSolidBlocks;
+import com.metalsmod.blocks.NickelOre;
+import com.metalsmod.blocks.PlatinumOre;
+import com.metalsmod.blocks.TitaniumOre;
+import com.metalsmod.blocks.ZinkOre;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;

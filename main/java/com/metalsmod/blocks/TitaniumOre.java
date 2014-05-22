@@ -1,4 +1,6 @@
-package com.metalsmod;
+package com.metalsmod.blocks;
+
+import com.metalsmod.metalsmod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
