@@ -7,9 +7,9 @@ import net.minecraft.block.material.Material;
 
 public class TitaniumOre extends Block {
 	
-	public TitaniumOre(Material material) {
+	public TitaniumOre() {
 		
-		super(material);
+		super(Material.rock);
 		setHardness(4.5F);
 		setCreativeTab(metalsmod.tabMetals);
 		setHarvestLevel("pickaxe", 1);

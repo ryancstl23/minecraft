@@ -67,7 +67,7 @@ public class metalsmod {
 		aluminumNugget = new Item().setCreativeTab(tabMetals).setUnlocalizedName("aluminumNugget").setTextureName("metalsMod:aluminumNugget");
 		GameRegistry.registerItem(aluminumNugget, "aluminumNugget");
 		
-		aluminumBlock = new BlockmetalSolidBlocks().setBlockName("aluminumBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:aluminumBlock");
+		aluminumBlock = new BlockmetalSolidBlocks().setBlockName("aluminumBlock").setBlockTextureName("metalsMod:aluminumBlock");
 		GameRegistry.registerBlock(aluminumBlock, "aluminumBlock");
 		
 		
@@ -78,7 +78,7 @@ public class metalsmod {
 		nickelNugget = new Item().setCreativeTab(tabMetals).setUnlocalizedName("nickelNugget").setTextureName("metalsMod:nickelNugget");
 		GameRegistry.registerItem(nickelNugget, "nickelNugget");
 
-		nickelBlock = new BlockmetalSolidBlocks().setBlockName("nickelBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:nickelBlock");
+		nickelBlock = new BlockmetalSolidBlocks().setBlockName("nickelBlock").setBlockTextureName("metalsMod:nickelBlock");
 		GameRegistry.registerBlock(nickelBlock, "nickelBlock");
 		
 		
@@ -89,7 +89,7 @@ public class metalsmod {
 		platinumNugget = new Item().setCreativeTab(tabMetals).setUnlocalizedName("platinumNugget").setTextureName("metalsMod:platinumNugget");
 		GameRegistry.registerItem(platinumNugget, "platinumNugget");
 
-		platinumBlock = new BlockmetalSolidBlocks().setBlockName("platinumBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:platinumBlock");
+		platinumBlock = new BlockmetalSolidBlocks().setBlockName("platinumBlock").setBlockTextureName("metalsMod:platinumBlock");
 		GameRegistry.registerBlock(platinumBlock, "platinumBlock");		
 		
 		
@@ -100,7 +100,7 @@ public class metalsmod {
 		titaniumNugget = new Item().setCreativeTab(tabMetals).setUnlocalizedName("titaniumNugget").setTextureName("metalsMod:titaniumNugget");
 		GameRegistry.registerItem(titaniumNugget, "titaniumNugget");
 		
-		titaniumBlock = new BlockmetalSolidBlocks().setBlockName("titaniumBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:titaniumBlock");
+		titaniumBlock = new BlockmetalSolidBlocks().setBlockName("titaniumBlock").setBlockTextureName("metalsMod:titaniumBlock");
 		GameRegistry.registerBlock(titaniumBlock, "titaniumBlock");
 		
 		
@@ -111,24 +111,24 @@ public class metalsmod {
 		zinkNugget = new Item().setCreativeTab(tabMetals).setUnlocalizedName("zinkNugget").setTextureName("metalsMod:zinkNugget");
 		GameRegistry.registerItem(zinkNugget, "zinkNugget");
 		
-		zinkBlock = new BlockmetalSolidBlocks().setBlockName("zinkBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:zinkBlock");
+		zinkBlock = new BlockmetalSolidBlocks().setBlockName("zinkBlock").setBlockTextureName("metalsMod:zinkBlock");
 		GameRegistry.registerBlock(zinkBlock, "zinkBlock");		
 		
 		
 		//Basic Ores
-		aluminumOre = new AluminumOre(Material.rock);
+		aluminumOre = new AluminumOre();
 		GameRegistry.registerBlock(aluminumOre, "Aluminum Ore");
 		
-		nickelOre = new NickelOre(Material.rock);	
+		nickelOre = new NickelOre();	
 		GameRegistry.registerBlock(nickelOre, "Nickel Ore");
 		
-		platinumOre = new PlatinumOre(Material.rock);
+		platinumOre = new PlatinumOre();
 		GameRegistry.registerBlock(platinumOre, "Platinum Ore");
 	
-		titaniumOre = new TitaniumOre(Material.rock);
+		titaniumOre = new TitaniumOre();
 		GameRegistry.registerBlock(titaniumOre, "Titanium Ore");
 	
-		zinkOre = new ZinkOre(Material.rock);
+		zinkOre = new ZinkOre();
 		GameRegistry.registerBlock(zinkOre, "Zink Ore");
 	}
 

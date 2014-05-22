@@ -7,9 +7,9 @@ import net.minecraft.block.material.Material;
 
 public class ZinkOre extends Block {
 	
-	public ZinkOre(Material material) {
+	public ZinkOre() {
 		
-		super(material);
+		super(Material.rock);
 		setHardness(3.0F);
 		setCreativeTab(metalsmod.tabMetals);
 		setHarvestLevel("pickaxe", 1);
