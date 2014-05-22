@@ -2,6 +2,7 @@ package com.metalsmod;
 
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -37,12 +38,12 @@ public class metalsmod {
 	};
 	
 	//Declare Items
-	public static Item aluminumOre, aluminumIngot, aluminumNugget, nickelOre, nickelIngot, nickelNugget, platinumOre, platinumIngot,
-	platinumNugget, titaniumOre, titaniumIngot, titaniumNugget, zinkOre, zinkIngot, zinkNugget;
+	public static Item aluminumIngot, aluminumNugget, nickelIngot, nickelNugget, platinumIngot,
+	platinumNugget, titaniumIngot, titaniumNugget, zinkIngot, zinkNugget;
 	
 	//Declare Blocks
-	public static Block aluminumOreBlock, aluminumBlock, nickelOreBlock, nickelBlock, platinumOreBlock, platinumBlock, titaniumOreBlock, 
-	titaniumBlock, zinkOreBlock, zinkBlock;
+	public static Block aluminumOre, aluminumBlock, nickelOre, nickelBlock, platinumOre, platinumBlock, titaniumOre, 
+	titaniumBlock, zinkOre, zinkBlock;
 
 	
 	
@@ -108,20 +109,20 @@ public class metalsmod {
 		
 		
 		//Basic Ores
-		aluminumOreBlock = new BlockmetalOresBlocks().setBlockName("aluminumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:aluminumOreBlock").setHardness(6F);
-		GameRegistry.registerBlock(aluminumOreBlock, "Aluminum Ore");
+		aluminumOre = new AluminumOre(Material.rock);
+		GameRegistry.registerBlock(aluminumOre, "Aluminum Ore");
 		
-		nickelOreBlock = new BlockmetalOresBlocks().setBlockName("nickelOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:nickelOreBlock").setHardness(4F);	
-		GameRegistry.registerBlock(nickelOreBlock, "Nickel Ore");
+		nickelOre = new NickelOre(Material.rock);	
+		GameRegistry.registerBlock(nickelOre, "Nickel Ore");
 		
-		platinumOreBlock = new BlockmetalOresBlocks().setBlockName("platinumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:platinumOreBlock").setHardness(15F);
-		GameRegistry.registerBlock(platinumOreBlock, "Platinum Ore");
+		platinumOre = new PlatinumOre(Material.rock);
+		GameRegistry.registerBlock(platinumOre, "Platinum Ore");
 	
-		titaniumOreBlock = new BlockmetalOresBlocks().setBlockName("titaniumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsmod:titaniumOreBlock").setHardness(8F);
-		GameRegistry.registerBlock(titaniumOreBlock, "Titanium Ore");
+		titaniumOre = new TitaniumOre(Material.rock);
+		GameRegistry.registerBlock(titaniumOre, "Titanium Ore");
 	
-		zinkOreBlock = new BlockmetalOresBlocks().setBlockName("zinkOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsmod:zinkOreBlock").setHardness(5F);
-		GameRegistry.registerBlock(zinkOreBlock, "Zink Ore");
+		zinkOre = new ZinkOre(Material.rock);
+		GameRegistry.registerBlock(zinkOre, "Zink Ore");
 	}
 
 	//Init Events
@@ -188,12 +189,6 @@ public class metalsmod {
 		GameRegistry.addSmelting(metalsmod.titaniumOre, new ItemStack(metalsmod.titaniumIngot), 0.8F);
 		GameRegistry.addSmelting(metalsmod.zinkOre, new ItemStack(metalsmod.zinkIngot), 0.8F);
 		
-		//Smelting Blocks of Ores
-		GameRegistry.addSmelting(metalsmod.aluminumOreBlock, new ItemStack(metalsmod.aluminumIngot), 0.8F);
-		GameRegistry.addSmelting(metalsmod.nickelOreBlock, new ItemStack(metalsmod.nickelIngot), 0.8F);
-		GameRegistry.addSmelting(metalsmod.platinumOreBlock, new ItemStack(metalsmod.platinumIngot), 0.8F);
-		GameRegistry.addSmelting(metalsmod.titaniumOreBlock, new ItemStack(metalsmod.titaniumIngot), 0.8F);
-		GameRegistry.addSmelting(metalsmod.zinkOreBlock, new ItemStack(metalsmod.zinkIngot), 0.8F);
 	}
 
 	//Post Init Events
