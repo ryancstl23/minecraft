@@ -108,19 +108,19 @@ public class metalsmod {
 		
 		
 		//Basic Ores
-		aluminumOreBlock = new BlockmetalOresBlocks().setBlockName("aluminumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:aluminumOreBlock");
+		aluminumOreBlock = new BlockmetalOresBlocks().setBlockName("aluminumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:aluminumOreBlock").setHardness(6F);
 		GameRegistry.registerBlock(aluminumOreBlock, "Aluminum Ore");
 		
-		nickelOreBlock = new BlockmetalOresBlocks().setBlockName("nickelOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:nickelOreBlock");	
+		nickelOreBlock = new BlockmetalOresBlocks().setBlockName("nickelOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:nickelOreBlock").setHardness(4F);	
 		GameRegistry.registerBlock(nickelOreBlock, "Nickel Ore");
 		
-		platinumOreBlock = new BlockmetalOresBlocks().setBlockName("platinumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:platinumOreBlock");
+		platinumOreBlock = new BlockmetalOresBlocks().setBlockName("platinumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:platinumOreBlock").setHardness(15F);
 		GameRegistry.registerBlock(platinumOreBlock, "Platinum Ore");
 	
-		titaniumOreBlock = new BlockmetalOresBlocks().setBlockName("titaniumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsmod:titaniumOreBlock");
+		titaniumOreBlock = new BlockmetalOresBlocks().setBlockName("titaniumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsmod:titaniumOreBlock").setHardness(8F);
 		GameRegistry.registerBlock(titaniumOreBlock, "Titanium Ore");
 	
-		zinkOreBlock = new BlockmetalOresBlocks().setBlockName("zinkOreBlock").setCreativeTab(tabMetals);
+		zinkOreBlock = new BlockmetalOresBlocks().setBlockName("zinkOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsmod:zinkOreBlock").setHardness(5F);
 		GameRegistry.registerBlock(zinkOreBlock, "Zink Ore");
 	}
 
