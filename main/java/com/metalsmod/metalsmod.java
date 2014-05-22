@@ -22,7 +22,6 @@ public class metalsmod {
 	public static final String VERSION = "0.0.7 PreAlpha - MC 1.7.2";
 	
 	
-	
 	//Set Up the first creative tab - Metals *Main Tab*
 	public static CreativeTabs tabMetals = new CreativeTabs("tabMetals") {
 		public Item getTabIconItem() {
@@ -44,6 +43,8 @@ public class metalsmod {
 	//Declare Blocks
 	public static Block aluminumOreBlock, aluminumBlock, nickelOreBlock, nickelBlock, platinumOreBlock, platinumBlock, titaniumOreBlock, 
 	titaniumBlock, zinkOreBlock, zinkBlock;
+
+	
 	
 	//Pre-Init Events
 	@EventHandler
@@ -119,13 +120,13 @@ public class metalsmod {
 		titaniumOreBlock = new BlockmetalOresBlocks().setBlockName("titaniumOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsmod:titaniumOreBlock");
 		GameRegistry.registerBlock(titaniumOreBlock, "Titanium Ore");
 	
-		zinkOreBlock = new BlockmetalOresBlocks().setBlockName("zinkOreBlock").setCreativeTab(tabMetals).setBlockTextureName("metalsMod:zinkOreBlock");
+		zinkOreBlock = new BlockmetalOresBlocks().setBlockName("zinkOreBlock").setCreativeTab(tabMetals);
 		GameRegistry.registerBlock(zinkOreBlock, "Zink Ore");
 	}
 
 	//Init Events
 	@EventHandler
-	public void init (FMLInitializationEvent event) {
+	public void init (FMLInitializationEvent event) {		
 		
 		//Create Recipes
 		

@@ -8,6 +8,7 @@ public class BlockmetalOresBlocks extends Block {
 	
 	public BlockmetalOresBlocks() {
 		super(Material.rock);
+		setHarvestLevel("pickaxe", 1);
 	}
 	
 }
