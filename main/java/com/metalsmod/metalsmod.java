@@ -8,6 +8,7 @@ import com.metalsmod.blocks.NickelOre;
 import com.metalsmod.blocks.PlatinumOre;
 import com.metalsmod.blocks.TitaniumOre;
 import com.metalsmod.blocks.ZinkOre;
+import com.metalsmod.WorldGenMetalsMod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -29,6 +30,8 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class metalsmod {
 	public static final String MODID = "Metals Mod";
 	public static final String VERSION = "0.0.7 PreAlpha - MC 1.7.2";
+	
+	public static WorldGenMetalsMod MyWorldGen  = new WorldGenMetalsMod();
 	
 	
 	//Set Up the first creative tab - Metals *Main Tab*
@@ -194,6 +197,8 @@ public class metalsmod {
 		GameRegistry.addShapelessRecipe(new ItemStack(metalsmod.zinkIngot, 9), new Object[] {
 			new ItemStack(metalsmod.zinkBlock)});		
 		
+		//Start World Generation HERE----
+		GameRegistry.registerWorldGenerator(MyWorldGen, 1);
 		
 		//Create Smelting Recipe
 		
