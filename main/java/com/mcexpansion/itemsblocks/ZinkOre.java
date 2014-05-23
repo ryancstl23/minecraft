@@ -1,6 +1,7 @@
-package com.metalsmod.blocks;
+package com.mcexpansion.itemsblocks;
 
-import com.metalsmod.metalsmod;
+import com.mcexpansion.main.*;
+import com.mcexpansion.itemsblocks.*;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,7 +12,7 @@ public class ZinkOre extends Block {
 		
 		super(Material.rock);
 		setHardness(3.0F);
-		setCreativeTab(metalsmod.tabMetals);
+		setCreativeTab(Items.mcExpansionTab);
 		setHarvestLevel("pickaxe", 1);
 		setBlockName("zinkOre");
 		setBlockTextureName("metalsMod:zinkOreBlock");

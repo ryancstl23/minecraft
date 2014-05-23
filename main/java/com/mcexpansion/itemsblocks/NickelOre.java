@@ -1,6 +1,4 @@
-package com.metalsmod.blocks;
-
-import com.metalsmod.metalsmod;
+package com.mcexpansion.itemsblocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,7 +9,7 @@ public class NickelOre extends Block {
 		
 		super(Material.rock);
 		setHardness(3.0F);
-		setCreativeTab(metalsmod.tabMetals);
+		setCreativeTab(Items.mcExpansionTab);
 		setHarvestLevel("pickaxe", 1);
 		setBlockName("nickelOre");
 		setBlockTextureName("metalsMod:nickelOreBlock");

@@ -1,13 +1,16 @@
-package com.metalsmod;
+package com.mcexpansion.main;
 
 import java.util.Random;
+
+import com.mcexpansion.main.*;
+import com.mcexpansion.itemsblocks.*;
 
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
 
-public class WorldGenMetalsMod implements IWorldGenerator {
+public class MCExpansionWorldGen implements IWorldGenerator {
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
@@ -35,42 +38,42 @@ public class WorldGenMetalsMod implements IWorldGenerator {
 			int randPosY = random.nextInt(50);
 			int randPosZ = chunkZ + random.nextInt(16);
 			
-			(new WorldGenMinable(metalsmod.aluminumOre, 5)).generate(world, random, randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(Items.aluminumOre, 5)).generate(world, random, randPosX, randPosY, randPosZ);
 		}
 		for (int i = 0; i < 14; i++) {
 			int randPosX = chunkX + random.nextInt(16);
 			int randPosY = random.nextInt(20);
 			int randPosZ = chunkZ + random.nextInt(16);
 			
-			(new WorldGenMinable(metalsmod.ligniteOre, 8)).generate(world, random, randPosX, (randPosY + 50), randPosZ);
+			(new WorldGenMinable(Items.ligniteOre, 8)).generate(world, random, randPosX, (randPosY + 50), randPosZ);
 		}
 		for (int i = 0; i < 10; i++) {
 			int randPosX = chunkX + random.nextInt(16);
 			int randPosY = random.nextInt(64);
 			int randPosZ = chunkZ + random.nextInt(16);
 			
-			(new WorldGenMinable(metalsmod.nickelOre, 7)).generate(world, random, randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(Items.nickelOre, 7)).generate(world, random, randPosX, randPosY, randPosZ);
 		}
 		for (int i = 0; i < 2; i++) {
 			int randPosX = chunkX + random.nextInt(16);
 			int randPosY = random.nextInt(7);
 			int randPosZ = chunkZ + random.nextInt(16);
 			
-			(new WorldGenMinable(metalsmod.platinumOre, 1)).generate(world, random, randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(Items.platinumOre, 1)).generate(world, random, randPosX, randPosY, randPosZ);
 		}
 		for (int i = 0; i < 10; i++) {
 			int randPosX = chunkX + random.nextInt(16);
 			int randPosY = random.nextInt(36);
 			int randPosZ = chunkZ + random.nextInt(16);
 			
-			(new WorldGenMinable(metalsmod.titaniumOre, 4)).generate(world, random, randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(Items.titaniumOre, 4)).generate(world, random, randPosX, randPosY, randPosZ);
 		}
 		for (int i = 0; i < 12; i++) {
 			int randPosX = chunkX + random.nextInt(16);
 			int randPosY = random.nextInt(64);
 			int randPosZ = chunkZ + random.nextInt(16);
 			
-			(new WorldGenMinable(metalsmod.zinkOre, 4)).generate(world, random, randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(Items.zinkOre, 4)).generate(world, random, randPosX, randPosY, randPosZ);
 		}
 	}
 	

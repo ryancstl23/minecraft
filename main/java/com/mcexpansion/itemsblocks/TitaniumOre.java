@@ -1,6 +1,6 @@
-package com.metalsmod.blocks;
+package com.mcexpansion.itemsblocks;
 
-import com.metalsmod.metalsmod;
+
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,7 +11,7 @@ public class TitaniumOre extends Block {
 		
 		super(Material.rock);
 		setHardness(4.5F);
-		setCreativeTab(metalsmod.tabMetals);
+		setCreativeTab(Items.mcExpansionTab);
 		setHarvestLevel("pickaxe", 1);
 		setBlockName("titaniumOre");
 		setBlockTextureName("metalsMod:titaniumOreBlock");

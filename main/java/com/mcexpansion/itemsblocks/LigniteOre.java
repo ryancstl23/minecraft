@@ -1,8 +1,6 @@
-package com.metalsmod.blocks;
+package com.mcexpansion.itemsblocks;
 
 import java.util.Random;
-
-import com.metalsmod.metalsmod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -12,14 +10,14 @@ public class LigniteOre extends Block {
 	
 	@Override
 	public Item getItemDropped(int metadata, Random random, int fortune) {
-		return metalsmod.lignite;
+		return Items.Lignite;
 	}
 	
 	public LigniteOre() {
 		
 		super(Material.rock);
 		setHardness(2.25F);
-		setCreativeTab(metalsmod.tabMetals);
+		setCreativeTab(Items.mcExpansionTab);
 		setHarvestLevel("pickaxe", 1);
 		setBlockName("ligniteOre");
 		setBlockTextureName("metalsMod:ligniteOreBlock");

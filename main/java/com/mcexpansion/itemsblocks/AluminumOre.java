@@ -1,6 +1,6 @@
-package com.metalsmod.blocks;
+package com.mcexpansion.itemsblocks;
 
-import com.metalsmod.metalsmod;
+
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,7 +11,7 @@ public class AluminumOre extends Block {
 		
 		super(Material.rock);
 		setHardness(5.0F);
-		setCreativeTab(metalsmod.tabMetals);
+		setCreativeTab(Items.mcExpansionTab);
 		setHarvestLevel("pickaxe", 1);
 		setBlockName("aluminumOre");
 		setBlockTextureName("metalsMod:aluminumOreBlock");
