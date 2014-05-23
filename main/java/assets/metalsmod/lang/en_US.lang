@@ -5,6 +5,7 @@ itemGroup.tabMetals=Metals
 item.aluminumOre.name=Aluminum Ore
 item.aluminumIngot.name=Aluminum Ingot
 item.aluminumNugget.name=Aluminum Nugget
+item.Lignite.name=Lignite
 item.nickelOre.name=Nickel Ore
 item.nickelIngot.name=Nickel Ingot
 item.nickelNugget.name= Nickel Nugget
@@ -20,11 +21,12 @@ item.zinkNugget.name=Zink Nugget
 
 
 //Block Names
-tile.aluminumOreBlock.name=Aluminum Ore
-tile.nickelOreBlock.name=Nickel Ore
-tile.platinumOreBlock.name=Platinum Ore
-tile.titaniumOreBlock.name=Titanium Ore
-tile.zinkOreBlock.name=Zink Ore
+tile.aluminumOre.name=Aluminum Ore
+tile.ligniteOre.name=Lignite Ore
+tile.nickelOre.name=Nickel Ore
+tile.platinumOre.name=Platinum Ore
+tile.titaniumOre.name=Titanium Ore
+tile.zinkOre.name=Zink Ore
 
 tile.aluminumBlock.name=Aluminum Block
 tile.nickelBlock.name=Nickel Block

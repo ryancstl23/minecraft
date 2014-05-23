@@ -3,6 +3,7 @@ package com.metalsmod;
 
 import com.metalsmod.blocks.AluminumOre;
 import com.metalsmod.blocks.BlockmetalSolidBlocks;
+import com.metalsmod.blocks.LigniteOre;
 import com.metalsmod.blocks.NickelOre;
 import com.metalsmod.blocks.PlatinumOre;
 import com.metalsmod.blocks.TitaniumOre;
@@ -45,11 +46,11 @@ public class metalsmod {
 	};
 	
 	//Declare Items
-	public static Item aluminumIngot, aluminumNugget, nickelIngot, nickelNugget, platinumIngot,
+	public static Item aluminumIngot, aluminumNugget, lignite, nickelIngot, nickelNugget, platinumIngot,
 	platinumNugget, titaniumIngot, titaniumNugget, zinkIngot, zinkNugget;
 	
 	//Declare Blocks
-	public static Block aluminumOre, aluminumBlock, nickelOre, nickelBlock, platinumOre, platinumBlock, titaniumOre, 
+	public static Block aluminumOre, aluminumBlock, ligniteOre, nickelOre, nickelBlock, platinumOre, platinumBlock, titaniumOre, 
 	titaniumBlock, zinkOre, zinkBlock;
 
 	
@@ -69,6 +70,10 @@ public class metalsmod {
 		
 		aluminumBlock = new BlockmetalSolidBlocks().setBlockName("aluminumBlock").setBlockTextureName("metalsMod:aluminumBlock");
 		GameRegistry.registerBlock(aluminumBlock, "aluminumBlock");
+		
+		//Lignite
+		lignite = new Item().setCreativeTab(tabMetals).setUnlocalizedName("Lignite").setTextureName("metalsMod:lignite");
+		GameRegistry.registerItem(lignite, "lignite");
 		
 		
 		//Nickel & Subtypes		
@@ -118,6 +123,9 @@ public class metalsmod {
 		//Basic Ores
 		aluminumOre = new AluminumOre();
 		GameRegistry.registerBlock(aluminumOre, "Aluminum Ore");
+		
+		ligniteOre = new LigniteOre();
+		GameRegistry.registerBlock(ligniteOre, "Lignite Ore");
 		
 		nickelOre = new NickelOre();	
 		GameRegistry.registerBlock(nickelOre, "Nickel Ore");
