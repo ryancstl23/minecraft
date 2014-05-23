@@ -30,10 +30,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class metalsmod {
 	public static final String MODID = "Metals Mod";
 	public static final String VERSION = "0.0.7 PreAlpha - MC 1.7.2";
-	
-	public static WorldGenMetalsMod MyWorldGen  = new WorldGenMetalsMod();
-	
-	
+		
 	//Set Up the first creative tab - Metals *Main Tab*
 	public static CreativeTabs tabMetals = new CreativeTabs("tabMetals") {
 		public Item getTabIconItem() {
@@ -198,10 +195,12 @@ public class metalsmod {
 			new ItemStack(metalsmod.zinkBlock)});		
 		
 		//Start World Generation HERE----
-		GameRegistry.registerWorldGenerator(MyWorldGen, 1);
+		GameRegistry.registerWorldGenerator(new WorldGenMetalsMod(), 1);
+		
+		//Fuel Registration
+		GameRegistry.registerFuelHandler(new MetalsModFuelHandler());
 		
 		//Create Smelting Recipe
-		
 		//Smelting Dropped Ores
 		GameRegistry.addSmelting(metalsmod.aluminumOre, new ItemStack(metalsmod.aluminumIngot), 0.8F);
 		GameRegistry.addSmelting(metalsmod.nickelOre, new ItemStack(metalsmod.nickelIngot), 0.8F);
