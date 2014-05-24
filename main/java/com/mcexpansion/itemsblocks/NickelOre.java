@@ -9,7 +9,7 @@ public class NickelOre extends Block {
 		
 		super(Material.rock);
 		setHardness(3.0F);
-		setCreativeTab(Items.mcExpansionTab);
+		setCreativeTab(ItemsBlocks.mcExpansionTab);
 		setHarvestLevel("pickaxe", 1);
 		setBlockName("nickelOre");
 		setBlockTextureName("metalsMod:nickelOreBlock");

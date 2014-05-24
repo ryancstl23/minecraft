@@ -11,7 +11,7 @@ public class TitaniumOre extends Block {
 		
 		super(Material.rock);
 		setHardness(4.5F);
-		setCreativeTab(Items.mcExpansionTab);
+		setCreativeTab(ItemsBlocks.mcExpansionTab);
 		setHarvestLevel("pickaxe", 1);
 		setBlockName("titaniumOre");
 		setBlockTextureName("metalsMod:titaniumOreBlock");

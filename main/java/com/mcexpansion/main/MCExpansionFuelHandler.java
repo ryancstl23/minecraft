@@ -11,9 +11,9 @@ public class MCExpansionFuelHandler implements IFuelHandler{
 
 	@Override
 	public int getBurnTime(ItemStack fuel) {
-		Item var1 = Items.Lignite;
+		Item var1 = ItemsBlocks.Lignite;
 		
-		if(var1 == Items.Lignite){
+		if(var1 == ItemsBlocks.Lignite){
 		return 660;
 		}
 		else {

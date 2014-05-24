@@ -10,14 +10,14 @@ public class LigniteOre extends Block {
 	
 	@Override
 	public Item getItemDropped(int metadata, Random random, int fortune) {
-		return Items.Lignite;
+		return ItemsBlocks.Lignite;
 	}
 	
 	public LigniteOre() {
 		
 		super(Material.rock);
 		setHardness(2.25F);
-		setCreativeTab(Items.mcExpansionTab);
+		setCreativeTab(ItemsBlocks.mcExpansionTab);
 		setHarvestLevel("pickaxe", 1);
 		setBlockName("ligniteOre");
 		setBlockTextureName("metalsMod:ligniteOreBlock");

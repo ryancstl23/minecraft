@@ -9,7 +9,7 @@ public class PlatinumOre extends Block {
 		
 		super(Material.rock);
 		setHardness(8.0F);
-		setCreativeTab(Items.mcExpansionTab);
+		setCreativeTab(ItemsBlocks.mcExpansionTab);
 		setHarvestLevel("pickaxe", 1);
 		setBlockName("platinumOre");
 		setBlockTextureName("metalsMod:platinumOreBlock");

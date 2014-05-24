@@ -22,7 +22,7 @@ public class MCExpansion {
 	@EventHandler
 	public void PreInit (FMLPreInitializationEvent event) {
 		
-		Items.itemsRegistry();
+		ItemsBlocks.itemsRegistry();
 		
 	}
 	
